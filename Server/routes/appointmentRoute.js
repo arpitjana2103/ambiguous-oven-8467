@@ -59,8 +59,8 @@ appointmentRouter.get('/user', userAuth, async (req, res) => {
     }
 });
 
-appointmentRouter.get('/expert', expertAuth, async (req, res) => {
-    let {expertID} = req.body;
+appointmentRouter.get('/expert/:expertID', async (req, res) => {
+    let {expertID} = req.params;
     try {
         let data = await AppointmentModel.find({expertID});
         return res.status(200).send({
@@ -76,25 +76,21 @@ appointmentRouter.get('/expert', expertAuth, async (req, res) => {
     }
 });
 
-appointmentRouter.patch(
-    '/expert/:appointmentID',
-    expertAuth,
-    async (req, res) => {
-        let id = req.params.appointmentID;
-        try {
-            await AppointmentModel.findByIdAndUpdate(id, req.body);
-            res.status(200).send({
-                isError: false,
-                message: 'appointment updated successfully',
-            });
-        } catch (error) {
-            return res.status(400).send({
-                isError: true,
-                error: error.message,
-            });
-        }
+appointmentRouter.patch('/expert/:appointmentID', async (req, res) => {
+    let id = req.params.appointmentID;
+    try {
+        await AppointmentModel.findByIdAndUpdate(id, req.body);
+        res.status(200).send({
+            isError: false,
+            message: 'appointment updated successfully',
+        });
+    } catch (error) {
+        return res.status(400).send({
+            isError: true,
+            error: error.message,
+        });
     }
-);
+});
 
 appointmentRouter.patch('/user/:appointmentID', userAuth, async (req, res) => {
     let id = req.params.appointmentID;
