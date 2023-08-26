@@ -1,0 +1,92 @@
+[
+    {
+        "name": "John Doe",
+        "image": "expert1.jpg",
+        "age": 30,
+        "gender": "male",
+        "experience": 5,
+        "email": "john.doe@example.com",
+        "password": "pass1234",
+        "specialisation": "MASSAGE"
+    },
+    {
+        "name": "Jane Smith",
+        "image": "expert2.jpg",
+        "age": 28,
+        "gender": "female",
+        "experience": 4,
+        "email": "jane.smith@example.com",
+        "password": "pass1234",
+        "specialisation": "MASSAGE"
+    },
+    {
+        "name": "Michael Johnson",
+        "image": "expert3.jpg",
+        "age": 35,
+        "gender": "male",
+        "experience": 6,
+        "email": "michael.johnson@example.com",
+        "password": "pass1234",
+        "specialisation": "MASSAGE"
+    },
+    {
+        "name": "Emily Brown",
+        "image": "expert4.jpg",
+        "age": 27,
+        "gender": "female",
+        "experience": 3,
+        "email": "emily.brown@example.com",
+        "password": "pass1234",
+        "specialisation": "WAXING"
+    },
+    {
+        "name": "William Davis",
+        "image": "expert5.jpg",
+        "age": 29,
+        "gender": "male",
+        "experience": 4,
+        "email": "william.davis@example.com",
+        "password": "pass1234",
+        "specialisation": "WAXING"
+    },
+    {
+        "name": "Olivia Wilson",
+        "image": "expert6.jpg",
+        "age": 32,
+        "gender": "female",
+        "experience": 5,
+        "email": "olivia.wilson@example.com",
+        "password": "pass1234",
+        "specialisation": "WAXING"
+    },
+    {
+        "name": "James Taylor",
+        "image": "expert7.jpg",
+        "age": 33,
+        "gender": "male",
+        "experience": 7,
+        "email": "james.taylor@example.com",
+        "password": "pass1234",
+        "specialisation": "FACIAL"
+    },
+    {
+        "name": "Sophia Martinez",
+        "image": "expert8.jpg",
+        "age": 26,
+        "gender": "female",
+        "experience": 4,
+        "email": "sophia.martinez@example.com",
+        "password": "pass1234",
+        "specialisation": "FACIAL"
+    },
+    {
+        "name": "Benjamin Anderson",
+        "image": "expert9.jpg",
+        "age": 31,
+        "gender": "male",
+        "experience": 6,
+        "email": "benjamin.anderson@example.com",
+        "password": "pass1234",
+        "specialisation": "FACIAL"
+    }
+]
